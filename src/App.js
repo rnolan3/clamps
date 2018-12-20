@@ -1,28 +1,43 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+
+import styled, { css, createGlobalStyle, keyframes } from 'styled-components'
+
+import Opening from './Opening'
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    color: ${props => (props.whiteColor ? 'white' : 'black')};
+    font-family: 'Basier Circle';
+    font-size: 18px;
+    height: 100%;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  figure {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  #root {
+    height: 100%;
+  }
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <GlobalStyle />
+        <Opening />
+      </>
     );
   }
 }
 
-export default App;
+export default App

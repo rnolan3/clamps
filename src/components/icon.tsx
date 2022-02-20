@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   background-size: cover;
   height: 90px;
   width: 90px;
-  margin-left: -5px;
+  margin-left: -10px;
 `;
 
 const Icon = ({ style = {} }) => {

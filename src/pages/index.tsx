@@ -174,7 +174,7 @@ const IndexPage = () => {
           Jane M. Spikowski + Robert W. Nolan III are getting married on
           Saturday, April 30th 2022.
         </p>
-        <p>We'd love for you to join us for our special day.</p>
+        <p>We'd love for you to join us on our special day.</p>
         <Description>
           <strong>Ceremony — 3pm</strong>
           <br />
@@ -228,7 +228,7 @@ const IndexPage = () => {
       >
         J+R
       </h1>
-      <Icon style={{ transform: "rotate(180deg)" }} />
+      <Icon style={{ transform: "rotate(180deg)", marginLeft: -20 }} />
     </main>
   );
 };

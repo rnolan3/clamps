@@ -54,6 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:17.0.2"],
             ["react-helmet", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:6.1.0"],
+            ["react-is", "npm:17.0.2"],
             ["styled-components", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:5.3.3"]
           ],
           "linkType": "SOFT",
@@ -11668,6 +11669,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:17.0.2"],
             ["react-helmet", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:6.1.0"],
+            ["react-is", "npm:17.0.2"],
             ["styled-components", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:5.3.3"]
           ],
           "linkType": "SOFT",
@@ -15515,6 +15517,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-is", "npm:16.13.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:17.0.2", {
+          "packageLocation": "./.yarn/cache/react-is-npm-17.0.2-091bbb8db6-9d6d111d89.zip/node_modules/react-is/",
+          "packageDependencies": [
+            ["react-is", "npm:17.0.2"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["react-lifecycles-compat", [
@@ -17289,7 +17298,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hoist-non-react-statics", "npm:3.3.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:17.0.2"],
-            ["react-is", null],
+            ["react-is", "npm:17.0.2"],
             ["shallowequal", "npm:1.1.0"],
             ["supports-color", "npm:5.5.0"]
           ],

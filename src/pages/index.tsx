@@ -1,78 +1,80 @@
-import React from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
-import List from '../components/list'
-import { Description } from '../components/description'
-import Icon from '../components/icon'
-import Section from '../components/section'
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import List from "../components/list";
+import { Description } from "../components/description";
+import Icon from "../components/icon";
+import Section from "../components/section";
 
 // styles
 const pageStyles = {
-  color: '#102342',
-  fontFamily: 'Baskervville, sans-serif',
-}
+  color: "#102342",
+  fontFamily: "Baskervville, sans-serif",
+};
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,
-  transform: 'rotate(180deg)',
-  position: 'relative',
-  display: 'inline-block',
-}
+  transform: "rotate(180deg)",
+  position: "relative",
+  display: "inline-block",
+};
 
 // data
 const links = [
   {
-    text: 'Rooster',
-    url: 'https://www.roosterstl.com/',
-    description: "Grab brunch spot that's only a couple blocks from the hotel.",
-    color: '#E95800',
+    text: "Rooster",
+    url: "https://www.roosterstl.com/",
+    description:
+      "Great brunch spot that's only a couple blocks from the hotel.",
+    color: "#E95800",
   },
   {
-    text: 'Arch Grounds',
-    url: 'https://www.archpark.org/',
-    description: 'Visit what defines the St. Louis skyline.',
-    color: '#1099A8',
+    text: "Arch Grounds",
+    url: "https://www.archpark.org/",
+    description: "Visit what defines the St. Louis skyline.",
+    color: "#1099A8",
   },
   {
-    text: 'Schlafly Taproom',
-    url: 'https://www.schlafly.com/tap-room-brewpub/',
+    text: "Schlafly Taproom",
+    url: "https://www.schlafly.com/tap-room-brewpub/",
     description: `The oldest craft brewery in St. Louis. The Tap Room offers a wonderful lunch and dinner menu set in an old printing factory.`,
-    color: '#BC027F',
+    color: "#BC027F",
   },
   {
-    text: 'Forest Park',
-    url: 'https://www.slam.org/',
+    text: "Forest Park",
+    url: "https://www.slam.org/",
     description:
       'Considered the "Heart of St. Louis". Enjoy the historic architecture, museums, and gardens.',
-    color: '#0D96F2',
+    color: "#0D96F2",
   },
   {
-    text: '4 Hands Brewing',
-    url: 'https://4handsbrewery.com',
-    description: 'Grab a beer and play some Skee-Ball',
-    color: '#8EB814',
+    text: "4 Hands Brewing",
+    url: "https://4handsbrewery.com",
+    description: "Grab a beer and play some Skee-Ball",
+    color: "#8EB814",
   },
-]
+];
 
 const accommodations = [
   {
-    text: 'The Last Hotel STL',
-    url: 'http://hotels.cloudbeds.com/reservation/FJ9mpn?allotment_block_code=b065967#checkin=2022-04-30&checkout=2022-05-01',
-    color: '#000',
+    text: "The Last Hotel STL",
+    url: "http://hotels.cloudbeds.com/reservation/FJ9mpn?allotment_block_code=b065967#checkin=2022-04-30&checkout=2022-05-01",
+    color: "#000",
     description: (
       <>
-        This hotel is steps from the Reception location. Rooftop Pool, free WiFi. Group
-        code: b065967.
+        This hotel is steps from the Reception location. Rooftop Pool, free
+        WiFi. Group code: b065967.
       </>
     ),
   },
-]
+];
 
 const ButtonTo = styled.a`
   background: ${(prop: { primary?: boolean }) =>
-    prop.primary ? '#102342' : 'transparent'};
+    prop.primary ? "#102342" : "transparent"};
   border: 1px solid #102342;
-  color: ${(prop: { primary?: boolean }) => (prop.primary ? '#fff' : '#102342')};
+  color: ${(prop: { primary?: boolean }) =>
+    prop.primary ? "#fff" : "#102342"};
   padding: 0.75em 1em;
   display: inline-block;
   text-decoration: none;
@@ -90,7 +92,7 @@ const ButtonTo = styled.a`
     padding: 0.4em 1em;
     font-size: 0.8em;
   }
-`
+`;
 
 const ButtonRow = styled.p`
   display: grid;
@@ -106,7 +108,7 @@ const ButtonRow = styled.p`
     padding-top: 10%;
     grid-auto-flow: column;
   }
-`
+`;
 
 const GlobalStyles = createGlobalStyle`
   
@@ -138,7 +140,8 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.25;
     padding-top: 0;
   }
-`
+
+`;
 
 // markup
 const IndexPage = () => {
@@ -155,11 +158,11 @@ const IndexPage = () => {
         <h1
           style={{
             ...headingStyles,
-            border: '1px solid #102342',
-            borderRadius: '2px',
+            border: "1px solid #102342",
+            borderRadius: "2px",
             borderTopWidth: 3,
-            padding: '.05em .5em',
-            display: 'inline-block',
+            padding: ".05em .5em",
+            display: "inline-block",
           }}
         >
           J+R
@@ -168,19 +171,31 @@ const IndexPage = () => {
 
       <Section>
         <p>
-          Jane M. Spikowski + Robert W. Nolan III are getting married on Saturday, April
-          30th 2022.
+          Jane M. Spikowski + Robert W. Nolan III are getting married on
+          Saturday, April 30th 2022.
         </p>
         <p>We'd love for you to join us for our special day.</p>
         <Description>
           <strong>Ceremony — 3pm</strong>
           <br />
           Elizabeth Cook Pavilion
+          <address>
+            <a href="https://goo.gl/maps/CjDG8oacmZFJViRr8" target="_blank">
+              2023 Lafayette Ave, St. Louis, MO 63104
+            </a>
+          </address>
         </Description>
         <Description>
           <strong>Reception — 6pm</strong>
           <br />
-          City Museum, Architecture Hall
+          City Museum, Architecture Hall.
+          <address>
+            <a href="https://goo.gl/maps/eZ89drdc7WutLAuQ6" target="_blank">
+              750 N 16th St, St. Louis, MO 63103
+            </a>
+          </address>
+          <br />
+          We'll be serving BBQ from Sugarfire with vegetarian options.
         </Description>
         <ButtonRow>
           <ButtonTo
@@ -204,18 +219,19 @@ const IndexPage = () => {
       <h1
         style={{
           ...headingStyles,
-          transform: 'rotate(0deg)',
-          border: '1px solid #102342',
-          borderRadius: '2px',
+          transform: "rotate(0deg)",
+          border: "1px solid #102342",
+          borderRadius: "2px",
           borderTopWidth: 3,
-          padding: '.05em .5em',
-          display: 'inline-block',
+          padding: ".05em .5em",
+          display: "inline-block",
         }}
       >
         J+R
       </h1>
+      <Icon style={{ transform: "rotate(180deg)" }} />
     </main>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

@@ -1,24 +1,24 @@
-import { ArrowRight } from 'phosphor-react'
-import React, { FC, ReactNode } from 'react'
-import styled from 'styled-components'
-import { Description } from './description'
-import Section from './section'
+import { ArrowRight } from "phosphor-react";
+import React, { FC, ReactNode } from "react";
+import styled from "styled-components";
+import { Description } from "./description";
+import Section from "./section";
 
 export interface Item {
-  text: string
-  url: string
-  description: ReactNode
-  color?: string
+  text: string;
+  url: string;
+  description: ReactNode;
+  color?: string;
 }
 
 interface Props {
-  title: ReactNode
-  items: Item[]
+  title: ReactNode;
+  items: Item[];
 }
 
 const List: FC<Props> = (props) => {
   return (
-    <Section style={{ maxWidth: '100%' }}>
+    <Section style={{ maxWidth: "100%" }}>
       <h1>{props.title}</h1>
       <UL>
         {props.items.map((link) => (
@@ -36,16 +36,15 @@ const List: FC<Props> = (props) => {
         ))}
       </UL>
     </Section>
-  )
-}
+  );
+};
 
 const Visit = styled.a`
   color: rgba(16, 35, 66, 0.7);
-  font-size: 0.8em;
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 100%;
     border-bottom: 2px solid ${(prop) => prop.color};
@@ -62,12 +61,12 @@ const Visit = styled.a`
       opacity: 1;
     }
   }
-`
+`;
 
 const UL = styled.ul`
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 550px));
   list-style: none;
   margin-bottom: 96px;
   padding-left: 0px;
@@ -76,11 +75,12 @@ const UL = styled.ul`
     display: inline-block;
     margin-bottom: 0.5em;
     margin-bottom: 0;
+    font-size: 0.8em;
   }
 
   p {
     margin-top: 0;
   }
-`
+`;
 
-export default List
+export default List;

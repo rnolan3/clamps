@@ -11,6 +11,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop -H 192.168.1.225",
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -29,6 +30,7 @@
     "gatsby-plugin-styled-components": "^5.7.0",
     "gatsby-plugin-typescript": "^4.7.0",
     "gatsby-source-filesystem": "^4.7.0",
+    "gh-pages": "^3.2.3",
     "phosphor-react": "^1.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

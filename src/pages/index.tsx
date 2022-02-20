@@ -179,21 +179,20 @@ const IndexPage = () => {
           <strong>Ceremony — 3pm</strong>
           <br />
           Elizabeth Cook Pavilion
-          <address>
-            <a href="https://goo.gl/maps/CjDG8oacmZFJViRr8" target="_blank">
-              2023 Lafayette Ave, St. Louis, MO 63104
-            </a>
-          </address>
+          <br />
+          <a href="https://goo.gl/maps/CjDG8oacmZFJViRr8" target="_blank">
+            2023 Lafayette Ave, St. Louis, MO 63104
+          </a>
         </Description>
         <Description>
           <strong>Reception — 6pm</strong>
           <br />
-          City Museum, Architecture Hall.
-          <address>
-            <a href="https://goo.gl/maps/eZ89drdc7WutLAuQ6" target="_blank">
-              750 N 16th St, St. Louis, MO 63103
-            </a>
-          </address>
+          City Museum, Architecture Hall
+          <br />
+          <a href="https://goo.gl/maps/eZ89drdc7WutLAuQ6" target="_blank">
+            750 N 16th St, St. Louis, MO 63103
+          </a>
+          <br />
           <br />
           We'll be serving BBQ from Sugarfire with vegetarian options.
         </Description>

@@ -55,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:17.0.2"],
             ["react-helmet", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:6.1.0"],
             ["react-is", "npm:17.0.2"],
+            ["sharp", "npm:0.30.1"],
             ["styled-components", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:5.3.3"]
           ],
           "linkType": "SOFT",
@@ -11670,6 +11671,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:17.0.2"],
             ["react-helmet", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:6.1.0"],
             ["react-is", "npm:17.0.2"],
+            ["sharp", "npm:0.30.1"],
             ["styled-components", "virtual:9baafea20c4d8c3ae905ccdc800d2edb377d4db944c34ca23a550ba3173a10d3ffb25c52827a6b7e2e4d84c6aff57e7778758edee93c38b0736cc439f7f86e2f#npm:5.3.3"]
           ],
           "linkType": "SOFT",
@@ -16468,6 +16470,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sharp", "npm:0.29.3"],
             ["color", "npm:4.2.1"],
             ["detect-libc", "npm:1.0.3"],
+            ["node-addon-api", "npm:4.3.0"],
+            ["node-gyp", "npm:8.4.1"],
+            ["prebuild-install", "npm:7.0.1"],
+            ["semver", "npm:7.3.5"],
+            ["simple-get", "npm:4.0.1"],
+            ["tar-fs", "npm:2.1.1"],
+            ["tunnel-agent", "npm:0.6.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:0.30.1", {
+          "packageLocation": "./.yarn/unplugged/sharp-npm-0.30.1-f6bead92d2/node_modules/sharp/",
+          "packageDependencies": [
+            ["sharp", "npm:0.30.1"],
+            ["color", "npm:4.2.1"],
+            ["detect-libc", "npm:2.0.1"],
             ["node-addon-api", "npm:4.3.0"],
             ["node-gyp", "npm:8.4.1"],
             ["prebuild-install", "npm:7.0.1"],

@@ -23,15 +23,21 @@ const List: FC<Props> = (props) => {
       <UL>
         {props.items.map((link) => (
           <li key={link.url}>
-            <a href={`${link.url}`} target="_blank">
-              {link.text}
-            </a>
+            {link.url ? (
+              <a href={`${link.url}`} target="_blank">
+                {link.text}
+              </a>
+            ) : (
+              link.text
+            )}
             <Description>{link.description}</Description>
 
-            <Visit href={`${link.url}`} target="_blank" color={link.color}>
-              Visit website
-              <i className="ph-arrow-right" />
-            </Visit>
+            {!!link.url && (
+              <Visit href={`${link.url}`} target="_blank" color={link.color}>
+                Visit website
+                <i className="ph-arrow-right" />
+              </Visit>
+            )}
           </li>
         ))}
       </UL>

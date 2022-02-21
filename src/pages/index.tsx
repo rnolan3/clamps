@@ -69,6 +69,24 @@ const accommodations = [
   },
 ];
 
+const cityMuseum = [
+  {
+    text: "Dress code",
+    description:
+      "Adventure Elegant or George Washington Casual. Bring knee pads.",
+  },
+  {
+    text: "Parking",
+    description:
+      "Secure parking is available at the City Museum on N 16th street. Free street parking.",
+  },
+  {
+    text: "Mask policy",
+    description: `As of Feb 20, 2022, The City Museum requires all guests to wear masks
+    when entering and in public spaces.`,
+  },
+];
+
 const ButtonTo = styled.a`
   background: ${(prop: { primary?: boolean }) =>
     prop.primary ? "#102342" : "transparent"};
@@ -192,9 +210,6 @@ const IndexPage = () => {
           <a href="https://goo.gl/maps/eZ89drdc7WutLAuQ6" target="_blank">
             750 N 16th St, St. Louis, MO 63103
           </a>
-          <br />
-          <br />
-          We'll be serving BBQ from Sugarfire with vegetarian options.
         </Description>
         <ButtonRow>
           <ButtonTo
@@ -213,8 +228,10 @@ const IndexPage = () => {
           </ButtonTo>
         </ButtonRow>
       </Section>
+      <List items={cityMuseum} title="City Museum Details" />
       <List items={accommodations} title="Accommodations" />
       <List items={links} title="Things to do near the hotel" />
+
       <h1
         style={{
           ...headingStyles,
